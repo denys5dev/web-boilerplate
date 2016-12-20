@@ -6,7 +6,8 @@
         path: {
             task: require('./gulp/path/tasks.js'),
             templates: require('./gulp/path/templates.js'),
-            app: require('./gulp/path/app.js')
+            app: require('./gulp/path/app.js'),
+            vendorCss: require('./gulp/path/vendor-css-path.js')
         },
         config: require('./gulp/config'),
         gulp: require('gulp'),
@@ -20,7 +21,7 @@
     });
 
     $.gulp.task('default', $.gulp.series('clean', 
-        $.gulp.parallel( 'pug', 'js', 'sass'), 
+        $.gulp.parallel( 'pug', 'js', 'sass', 'vendor_css'), 
         $.gulp.parallel('watch', 'serve')
     ));
 
