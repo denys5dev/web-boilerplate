@@ -1,0 +1,29 @@
+// =================================
+// Chris Coyier border-box reset
+// =================================
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after{
+    box-sizing: inherit;
+}
+	
+
+// =================================
+// Clearfix
+// =================================
+
+.clearfix {
+    &::before,
+	&::after {
+        content: "";
+		display: table;
+    }
+	&::after{
+        clear: both;
+    }
+}
