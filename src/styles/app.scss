@@ -20,3 +20,20 @@ body {
     margin: 0;
     
 }
+
+#header {
+    min-height: 997px;
+}
+
+.header-top {
+    min-height: 466px;
+    background-color: rgb(105, 210, 231);
+    &__name {
+        margin: 0;
+    }
+}
+
+.header-bottom {
+    min-height: 531px;
+
+}

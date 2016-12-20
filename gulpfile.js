@@ -21,7 +21,7 @@
     });
 
     $.gulp.task('default', $.gulp.series('clean', 
-        $.gulp.parallel( 'pug', 'js', 'sass', 'vendor_css'), 
+        $.gulp.parallel( 'pug', 'js', 'sass', 'vendor_css', 'copy.image'), 
         $.gulp.parallel('watch', 'serve')
     ));
 
